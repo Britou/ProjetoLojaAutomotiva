@@ -9,13 +9,20 @@
     <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container container-flex">
             <h1>EBAC Motors</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <nav>
             <div class="container">
@@ -36,6 +43,95 @@
             </div>
         </nav>
     </header>
+
+    <div id="carousel-imagens">
+        <img src="./images/slide1.png" alt="Carro da Porsche">
+        <img src="./images/slide2.png" alt="Carro da BMW">
+        <img src="./images/slide3.png" alt="Carro da Ford">
+    </div>
+    <section id="sobre-a-loja">
+        <div class="container container-flex"></divclass>
+            <img src="./images/loja.jpg" alt="Imagem da loja EBAC motors">
+            <div>
+                <h2>Sobre a EBAC motors</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam laborum corporis nam eum alias, laudantium nostrum, qui natus fuga nesciunt minus nobis voluptatibus vel, dignissimos perspiciatis sunt excepturi quasi.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maiores voluptate quae molestiae soluta unde eligendi, corporis, laudantium perferendis voluptatibus obcaecati! Quo in, beatae dolor est provident quod voluptate atque.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./images/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <strong>R$ 75.000</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <strong>R$ 75.000</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <strong>R$ 75.000</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <strong>R$ 75.000</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio automatico, 4 portas, vidros e travas eletricas
+                    </p>
+                    <strong>R$ 75.000</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#carousel-imagens').slick({
+                autoplay: true,
+            });
+
+            $('.menu-hamburguer').click(function() {
+                $('nav').slideToggle();
+            })
+        })
+
+    </script>
 </body>
 
 </html>
